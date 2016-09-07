@@ -28,10 +28,10 @@ $state       = $smtp->sendmail( $smtpemailto, $smtpusermail, $mailtitle, $mailco
 
 echo "<div style='width:300px; margin:36px auto;'>";
 if ( $state == "" ) {
-	echo "对不起，邮件发送失败！请检查邮箱填写是否有误。";
-	echo "<a href='index.html'>点此返回</a>";
+	echo "send fail";
+	echo "<a href='index.html'>return</a>";
 	exit();
 }
-echo "恭喜！邮件发送成功！！";
-echo "<a href='index.html'>点此返回</a>";
+echo "send success";
+echo "<a href='index.html'>return</a>";
 echo "</div>";
